@@ -1,0 +1,43 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+         
+        double x1 , x2 , x3; //scores
+        x1= 99.9;
+        x2= 50.0;
+        x3= 75.6;
+        
+        // print the score and grade for student #1
+        System.out.println("student #1 score is: ");
+        System.out.println(x1);
+        System.out.println("the grade is: ");
+        max(x1);
+
+        // print the score and grade for student #2        
+        System.out.println("student #2 score is: ");
+        System.out.println(x2);
+        System.out.println("the grade is: ");
+        max(x2);
+
+        // print the score and grade for student #3        
+        System.out.println("student #3 score is: ");
+        System.out.println(x3);
+        System.out.println("the grade is: ");
+        max(x3);  
+     }
+
+        // function to print student grade
+        public static void max(double grade){ 
+        if (grade>=90)
+           System.out.println("A");
+        else if (grade>=80)
+            System.out.println("B");
+        else if(grade>=70)
+             System.out.println("C");
+        else if(grade>=60)
+              System.out.println("D");
+        else 
+              System.out.println("F");
+        }
+
+     }
